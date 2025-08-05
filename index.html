@@ -2,45 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manoj Rahar | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/profile.jpg" type="image/png">
+  <meta name="description" content="Portfolio of Manoj Rahar – Web Developer, UI/UX enthusiast, and BCA student.">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .dark-mode .section {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+    .toggle-btn {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 999;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: white;
+      font-size: 1.5rem;
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #0077b6;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <img src="images/profile.jpg" alt="Manoj Rahar" class="profile-img" />
+
+  <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <header data-aos="fade-down">
+    <img src="1754360280872.jfif" alt="Manoj Rahar" class="profile-img" />
     <h1>Manoj Rahar</h1>
-    <p class="bio">Aspiring Web Developer currently pursuing a BCA degree and passionate about crafting responsive, interactive front‑end experiences.</p>
+    <p class="bio">Third-year BCA student & web development enthusiast. Passionate about building responsive web apps, solving real-world problems, and growing through teamwork and feedback.</p>
   </header>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Education</h2>
     <ul>
-      <li><strong>Currently pursuing:</strong> BCA – Lachoo Memorial College, Jodhpur (2023–2026)</li>
-      <li><strong>High School:</strong> Army Public School, Jodhpur</li>
+      <li><strong>BCA</strong> – Lachoo Memorial College of Science & Technology, Jodhpur (Graduating June 2026)</li>
+      <li><strong>12th (95%)</strong> – Army Public School, Jodhpur (2021)</li>
+      <li><strong>10th (80%)</strong> – Army Public School, Jodhpur (2019)</li>
     </ul>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
     <h2>Skills</h2>
     <ul>
-      <li>C++, JavaScript (ES6+)</li>
-      <li>HTML5, CSS3 (responsive design, Flexbox, Grid)</li>
-      <li>Git & GitHub, Bootstrap</li>
-      <li>Basic UI/UX design with Figma</li>
+      <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript (ES6+), Responsive Design, Git, GitHub, Bootstrap (basic)</li>
+      <li><strong>Programming:</strong> C, C++, Java, Python, JavaScript</li>
+      <li><strong>UI/UX:</strong> Canva, wireframing, branding, accessibility</li>
+      <li><strong>Data/Analytics:</strong> Power BI, Excel</li>
+      <li><strong>Soft Skills:</strong> Communication, adaptability, collaboration</li>
     </ul>
   </section>
 
-  <section class="section">
-    <h2>Experience & Projects</h2>
+  <section class="section" data-aos="fade-up">
+    <h2>Projects</h2>
     <ul>
-      <li><strong>Humari Pahchan</strong> – Participated as part of community‑based or technical contributions.</li>
-      <li><strong>Portfolio Website</strong> – This site, showcasing responsive layout and modern card‑style design.</li>
-      <li><strong>Additional Projects</strong> – Landing Page clone, form with validation, blog layout with hover effects.</li>
+      <li><strong>Netflix Clone:</strong> A responsive clone of Netflix with dynamic UI using HTML, CSS, and JavaScript. [<a href="https://manojrahar.github.io/netflixbymanoj/" target="_blank">Live Demo</a>]</li>
+      <li><strong>Rajasthan Travel Blog:</strong> A mobile-first blog site with accessible design and interactive features.</li>
+      <li><strong>Data Analysis Dashboard:</strong> Built using Power BI & Excel to derive insights from survey data.</li>
+      <li><strong>Additional Projects:</strong> UI and JavaScript projects hosted on GitHub. [<a href="https://github.com/manojrahar" target="_blank">GitHub</a>]</li>
     </ul>
   </section>
 
-  <section class="section">
+  <section class="section" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Meta Web Development Certificate (2024)</li>
+      <li>HTML, CSS, JavaScript (multiple certifications)</li>
+    </ul>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <ul>
+      <li><strong>2nd Place – College Web Design Competition (2024):</strong> Recognized for creative UI/UX design and team-based problem-solving.</li>
+    </ul>
+  </section>
+
+  <section class="section" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form>
       <input type="text" placeholder="Your Name" required />
@@ -50,8 +112,30 @@
     </form>
   </section>
 
+  <!-- Resume Card Section -->
+<section class="section resume-card">
+  <h2>My Resume</h2>
+  <p>Want to know more about my projects, skills, and experience?</p>
+  <p>Download or view my full resume here:</p>
+  <a href="resume.pdf" download class="resume-btn">📄 Download Resume</a>
+</section>
+
+
   <footer>
     <p>© 2025 Manoj Rahar. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/manoj-rahar-a8b1b4251" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/manojrahar" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
