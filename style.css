@@ -86,7 +86,6 @@ h1 {
 
 .connect-card {
   text-align: center;
-  background-color: #f2f2f2;
   padding: 2rem;
   border-radius: 12px;
   margin-top: 2rem;
@@ -179,3 +178,4 @@ footer {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
+
