@@ -84,6 +84,17 @@ h1 {
     padding-left: 1.5rem;
 }
 
+.resume-card {
+  text-align: center;
+  background: var(--card-bg);
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 800px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease;
+}
+
 form {
     display: flex;
     flex-direction: column;
