@@ -84,6 +84,44 @@ h1 {
     padding-left: 1.5rem;
 }
 
+.connect-card {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+#dark-mode-toggle:checked ~ .connect-card {
+  background-color: #1e1e1e;
+}
+
+.connect-icons {
+  margin-top: 1rem;
+}
+
+.connect-icons a {
+  margin: 0 15px;
+  display: inline-block;
+  transition: transform 0.3s, fill 0.3s;
+}
+
+.connect-icons .icon {
+  width: 32px;
+  height: 32px;
+  fill: #0077b6;
+}
+
+#dark-mode-toggle:checked ~ .connect-card .icon {
+  fill: #90e0ef;
+}
+
+.connect-icons a:hover {
+  transform: scale(1.2);
+  fill: #023e8a;
+}
+
+
 .resume-card {
   text-align: center;
   background: var(--card-bg);
